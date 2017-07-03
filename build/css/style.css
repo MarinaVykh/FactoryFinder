@@ -368,14 +368,25 @@ td,
 th {
   padding: 0; }
 
+@font-face {
+  font-family: 'FiraSans';
+  src: url("../fonts/firasans-regular-webfont.woff2") format("woff2"), url("../fonts/firasans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'FiraSans';
+  src: url("../fonts/firasans-medium-webfont.woff2") format("woff2"), url("../fonts/firasans-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
 * {
   box-sizing: border-box; }
 
 body {
   min-width: 320px;
   margin: 0 auto;
-  font-family: Tahoma, sans-serif;
-  background-image: url("../img/bg-all.jpg"); }
+  font-family: FiraSans, sans-serif; }
 
 a {
   text-decoration: none; }
@@ -384,15 +395,5 @@ img {
   display: block;
   max-width: 100%;
   height: auto; }
-
-h1, h2 {
-  margin: 0;
-  padding: 0;
-  font-weight: 500;
-  font-family: "Prototypster";
-  text-transform: uppercase; }
-
-header, nav, main, section, article, aside, footer {
-  display: block; }
 
 /*# sourceMappingURL=style.css.map */
