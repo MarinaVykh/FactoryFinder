@@ -138,25 +138,25 @@ gulp.task('clean', function () {
 });
 
 // ЗАДАЧА: Конкатенация и углификация Javascript
-gulp.task('js', function () {
-  return gulp.src([
-    // список обрабатываемых файлов
-    //dirs.source + '/js/map.js',
-    dirs.source + '/js/main.js',
-  ])
-    .pipe(plumber({errorHandler: onError}))
-    .pipe(concat('main.min.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest(dirs.build + '/js'));
-});
+// gulp.task('js', function () {
+//   return gulp.src([
+//     // список обрабатываемых файлов
+//     //dirs.source + '/js/map.js',
+//     dirs.source + '/js/main.js',
+//   ])
+//     .pipe(plumber({errorHandler: onError}))
+//     .pipe(concat('main.min.js'))
+//     .pipe(uglify())
+//     .pipe(gulp.dest(dirs.build + '/js'));
+// });
 
-gulp.task('js:copy:picturefill', function () {
-  return gulp.src([
-    // список обрабатываемых файлов
-    dirs.source + '/js/picturefill.min.js',
-  ])
-    .pipe(gulp.dest(dirs.build + '/js'));
-});
+// gulp.task('js:copy:picturefill', function () {
+//   return gulp.src([
+//     // список обрабатываемых файлов
+//     dirs.source + '/js/picturefill.min.js',
+//   ])
+//     .pipe(gulp.dest(dirs.build + '/js'));
+// });
 
 // ЗАДАЧА: Кодирование в base64 шрифта в формате WOFF
 gulp.task('css:fonts:woff', function (callback) {
@@ -207,7 +207,7 @@ gulp.task('css:fonts:woff2', function (callback) {
 gulp.task('build', gulp.series(                             // последовательно:
   'clean',                                                  // последовательно: очистку папки сборки
   'svgstore',
-  gulp.parallel('sass', 'img', 'js', 'js:copy:picturefill', 'copy:fonts'),
+  gulp.parallel('sass', 'img', 'copy:fonts'),
   'html'                                                    // последовательно: сборку разметки
 ));
 
@@ -248,10 +248,10 @@ gulp.task('serve', gulp.series('build', function () {
     gulp.series('img', reloader)                            // при изменении оптимизируем, копируем и обновляем в браузере
   );
 
-  gulp.watch(                                               // следим за JS
-    dirs.source + '/js/*.js',
-    gulp.series('js', reloader)                            // при изменении пересобираем и обновляем в браузере
-  );
+  // gulp.watch(                                               // следим за JS
+  //   dirs.source + '/js/*.js',
+  //   gulp.series('js', reloader)                            // при изменении пересобираем и обновляем в браузере
+  // );
 
 }));
 
