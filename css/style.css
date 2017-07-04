@@ -404,12 +404,14 @@ ul {
   display: -ms-flexbox;
   display: flex;
   width: 1280px;
+  min-width: 960px;
+  height: 100vh;
   margin: 0 auto;
   border: 1px solid #e3e3e3;
   border-top: 4px solid #3091ff; }
 
 .order__main {
-  width: 1130px; }
+  background-color: #f1f4f8; }
 
 .order__main-header {
   background-color: #ffffff;
@@ -435,7 +437,6 @@ ul {
   margin-right: 10px; }
 
 .order__main-info {
-  background-color: #f1f4f8;
   padding: 20px; }
 
 .navigation {
@@ -446,9 +447,6 @@ ul {
   height: 55px;
   text-align: center;
   border-bottom: 1px solid #2e445b; }
-
-.navigation__list {
-  padding-left: 20px; }
 
 .navigation__item {
   display: block;
@@ -596,7 +594,6 @@ ul {
   color: #888888; }
 
 .live-chat {
-  margin-bottom: 28px;
   padding: 20px;
   background-color: #faf8f5;
   border: 1px solid #e9decc;
