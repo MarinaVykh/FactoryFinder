@@ -1,0 +1,26 @@
+.content-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.content-header__name {
+  padding: 18px 0 18px 20px;
+  font-weight: 500;
+  color: #213346;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.content-header__name a {
+  color: #213346;
+}
+
+.content-header__actions {
+  display: flex;
+  padding: 10px 0 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.content-header__action-item {
+  margin-right: 10px;
+}

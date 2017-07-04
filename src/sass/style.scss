@@ -3,10 +3,13 @@
 @import "global/fonts";
 @import "global/base";
 
-@import "blocks/order";
+@import "blocks/page";
 @import "blocks/navigation";
-@import "blocks/items-info";
+@import "blocks/content";
+@import "blocks/content-header";
+@import "blocks/content-info";
 @import "blocks/validation";
+@import "blocks/items-info";
 @import "blocks/additional";
 @import "blocks/live-chat";
 @import "blocks/button";
