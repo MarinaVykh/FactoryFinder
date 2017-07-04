@@ -6,3 +6,10 @@
   border: 1px solid #e3e3e3;
   border-top: 4px solid #3091ff;
 }
+
+@media ($tablet-width) {
+
+  .page {
+    width: 768px;
+  }
+}

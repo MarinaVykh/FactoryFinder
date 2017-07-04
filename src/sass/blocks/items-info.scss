@@ -1,5 +1,5 @@
 .items-info {
-  width: 1090px;
+  //width: 1090px;
   margin-bottom: 20px;
   background-color: #ffffff;
   border: 1px solid #e3e3e3;
@@ -72,4 +72,31 @@
 
 .items-info__link a {
   color: #888888;
+}
+
+@media ($tablet-width) {
+
+  .items-info {
+    //width: 768px;
+  }
+
+  .items-info__item-name {
+    width: 350px;
+  }
+
+  .items-info__quantity {
+    width: 90px;
+  }
+
+  .items-info__price {
+    width: 140px;
+  }
+
+  .items-info__total {
+    width: 140px;
+  }
+
+  .items-info__link {
+    width: 48px;
+  }
 }

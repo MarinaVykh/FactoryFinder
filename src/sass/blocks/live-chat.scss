@@ -19,3 +19,9 @@
 .live-chat__button {
   margin-left: 220px;
 }
+
+@media ($tablet-width) {
+  .live-chat__button {
+    margin-left: 30px;
+  }
+}
