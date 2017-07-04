@@ -1,13 +1,15 @@
 .order {
   display: flex;
   width: 1280px;
+  min-width: 960px;
+  height: 100vh;
   margin: 0 auto;
   border: 1px solid #e3e3e3;
   border-top: 4px solid #3091ff;
 }
 
 .order__main {
-  width: 1130px;
+  background-color: #f1f4f8;
 }
 
 .order__main-header {
@@ -38,6 +40,5 @@
 }
 
 .order__main-info {
-  background-color: #f1f4f8;
   padding: 20px;
 }
