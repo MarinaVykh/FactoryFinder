@@ -1,0 +1,21 @@
+.validation {
+  margin-bottom: 20px;
+  padding: 19px 20px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #363636;
+  background-color: #ffffff;
+  border: solid 1px #e3e3e3;
+  border-left: 4px solid #2cb2d5;
+  border-radius: 4px;
+}
+
+.validation__title {
+  display: block;
+  font-weight: 500;
+  color: #2cb2d5;
+}
+
+.validation__text {
+  display: block;
+}
