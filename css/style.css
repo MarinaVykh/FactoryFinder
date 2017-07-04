@@ -400,44 +400,14 @@ ul {
   margin: 0;
   padding: 0; }
 
-.order {
+.page {
   display: -ms-flexbox;
   display: flex;
   width: 1280px;
-  min-width: 960px;
   height: 100vh;
   margin: 0 auto;
   border: 1px solid #e3e3e3;
   border-top: 4px solid #3091ff; }
-
-.order__main {
-  background-color: #f1f4f8; }
-
-.order__main-header {
-  background-color: #ffffff;
-  border-bottom: 1px solid #e3e3e3; }
-
-.order__main-name {
-  padding: 18px 0 18px 20px;
-  font-weight: 500;
-  color: #213346;
-  border-bottom: 1px solid #e3e3e3; }
-
-.order__main-name a {
-  color: #213346; }
-
-.order__main-actions {
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px 0 10px 20px;
-  font-size: 14px;
-  font-weight: 500; }
-
-.order__main-action-item {
-  margin-right: 10px; }
-
-.order__main-info {
-  padding: 20px; }
 
 .navigation {
   width: 150px;
@@ -468,6 +438,55 @@ ul {
   left: -20px;
   height: 38px;
   border-left: 3px solid #3091ff; }
+
+.content {
+  background-color: #f1f4f8;
+  overflow: auto; }
+
+.content-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e3e3e3; }
+
+.content-header__name {
+  padding: 18px 0 18px 20px;
+  font-weight: 500;
+  color: #213346;
+  border-bottom: 1px solid #e3e3e3; }
+
+.content-header__name a {
+  color: #213346; }
+
+.content-header__actions {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0 10px 20px;
+  font-size: 14px;
+  font-weight: 500; }
+
+.content-header__action-item {
+  margin-right: 10px; }
+
+.content-info {
+  padding: 20px; }
+
+.validation {
+  margin-bottom: 20px;
+  padding: 19px 20px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #363636;
+  background-color: #ffffff;
+  border: solid 1px #e3e3e3;
+  border-left: 4px solid #2cb2d5;
+  border-radius: 4px; }
+
+.validation__title {
+  display: block;
+  font-weight: 500;
+  color: #2cb2d5; }
+
+.validation__text {
+  display: block; }
 
 .items-info {
   width: 1090px;
@@ -528,25 +547,6 @@ ul {
 
 .items-info__link a {
   color: #888888; }
-
-.validation {
-  margin-bottom: 20px;
-  padding: 19px 20px;
-  font-size: 14px;
-  line-height: 1.71;
-  color: #363636;
-  background-color: #ffffff;
-  border: solid 1px #e3e3e3;
-  border-left: 4px solid #2cb2d5;
-  border-radius: 4px; }
-
-.validation__title {
-  display: block;
-  font-weight: 500;
-  color: #2cb2d5; }
-
-.validation__text {
-  display: block; }
 
 .additional {
   margin-bottom: 20px;
@@ -609,7 +609,7 @@ ul {
   font-weight: 500; }
 
 .live-chat__button {
-  margin-left: 222px; }
+  margin-left: 220px; }
 
 .button {
   display: inline-block;
