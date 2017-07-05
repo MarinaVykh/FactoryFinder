@@ -414,9 +414,14 @@ ul {
   background-color: #213346; }
 
 .navigation__logo {
-  height: 55px;
+  padding: 18px 0 18px 0;
   text-align: center;
+  color: #ffffff;
+  font-weight: 500;
   border-bottom: 1px solid #2e445b; }
+
+.navigation__logo--thin {
+  font-weight: normal; }
 
 .navigation__item {
   display: block;
